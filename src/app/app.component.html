@@ -1,26 +1,2 @@
-<h1 class="color">{{title}}</h1>
-<h1>{{count}}</h1>
-
-<h1  *ngIf="count > 0">I am visible if I am greater than 0</h1>
-<button (click)="decreaseCount()">Decrement</button>
-<button (click)="increaseCount()">Increment</button>
-
-
-<li *ngFor="let number of listOfNumbers">{{number}}</li>
-<br>
-<input type="text" [(ngModel)] ="title">
-<div class="calc">
-  <h1>Basic Calculator</h1>
-  <h2>Inputs</h2>
-  <h3>{{A}} {{B}}</h3>
-  <input type="number" [(ngModel)] = "A">
-  <input type="number" [(ngModel)] = "B"><br>
-  <button (click)="add()">Add</button>
-  <button (click)="subtract()">Subtract</button>
-  <button (click)="multiply()">Multiply</button>
-  <button (click)="divide()">Divide</button>
-  <h3>Result</h3>
-  <div class="res">{{C}}</div>
-
-
-</div>
+<app-todo></app-todo>
+<app-joke></app-joke>
